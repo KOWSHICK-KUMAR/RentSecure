@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
    // Set base for GitHub Pages: https://<user>.github.io/<repo>/
-  base: '/RentSecure/',
+  base: 'https://kowshick-kumar.github.io/RentSecure/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
