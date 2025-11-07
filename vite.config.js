@@ -3,11 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-   // Set base for GitHub Pages: https://<user>.github.io/<repo>/
-  base: 'https://kowshick-kumar.github.io/RentSecure/',
+  // 👇 The base path must exactly match your repo name
+  base: '/RentSecure/',
   build: {
-    outDir: 'docs',
-    emptyOutDir: true,
+    outDir: 'docs',       // GitHub Pages expects files here
+    emptyOutDir: true,    // Clears old files before rebuild
   },
 })
-
